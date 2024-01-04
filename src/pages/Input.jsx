@@ -1,21 +1,19 @@
 import { useDispatch } from "react-redux"
-import { useInputSelector, setInputValue } from "../store/InputSlice/InputSlice";
 import { fetchMovies } from "../store/MoviesSlice/MoviesSlice";
+import { useState } from "react";
 
 export const Input = () => {
     const dispatch = useDispatch();
-    const inputVal = useInputSelector();
-    const onChange = (e) => {
-        dispatch(setInputValue(e.target.value))
-    }
+    const [value, setValue] = useState('')
+
     const onClick = () => {
-        dispatch(fetchMovies())
+        dispatch(fetchMovies({value}))
     }
     return(
         <div>
-            <p>input val from redux {inputVal}</p>
-            <input type='text' value={inputVal} onChange={(e)=>onChange(e)}/>
-            <button onClick={() => onClick()}>send</button>
+            <p>input val from redux {value}</p>
+            <input type='text' value={value} onChange={(e)=>setValue(e.target.value)}/>
+            <button onClick={onClick}>send</button>
         </div>
     )
 }

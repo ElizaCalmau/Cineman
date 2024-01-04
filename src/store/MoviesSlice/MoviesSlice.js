@@ -5,8 +5,10 @@ import { useSelector } from "react-redux";
 // const apiKey = '499adc143510099427a185e36cd48fb2';
 export const fetchMovies = createAsyncThunk( 
     'fetch-movies',
-    async () => {
-        const response = await fetch(`https://api.themoviedb.org/3/movie/244?api_key=499adc143510099427a185e36cd48fb2`)
+    async ({value}) => {
+        const id = parseInt(value)
+        console.log(typeof id)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=499adc143510099427a185e36cd48fb2`)
         if(response.ok){
             const data = await response.json();
             console.log(data)
