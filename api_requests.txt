@@ -56,3 +56,6 @@ https://www.youtube.com/watch?v=some_video_key
 
 
 https://api.themoviedb.org/3/discover/movie?api_key=499adc143510099427a185e36cd48fb2&primary_release_date.gte=2010-01-01&primary_release_date.lte=2015-12-31 --- YEARS RANGE
+
+
+https://api.themoviedb.org/3/configuration?api_key=499adc143510099427a185e36cd48fb2 -- retrieve general config info

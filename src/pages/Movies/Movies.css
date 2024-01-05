@@ -1,9 +1,21 @@
 .homepageMovies{
-    height: 1000px;
+    height: fit-content;
     width: 100vw;
     background-color: black;
 }
 
-.homepageMovies ul {
-    margin: 0;
+.movieDescription{
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 50%;
+}
+.moviePoster img{
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 6px;
+}
+.movieWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5em;
 }

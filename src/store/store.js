@@ -4,6 +4,7 @@ import { inputReducer } from "./InputSlice/InputSlice";
 import { rangeMovieReducer } from './YearsRangeSlice/YearRangeSlice'
 import { titleReducer } from "./TitleSlice.jsx/TitleSlice";
 import { categoriesReducer } from "./HeroCategoriesSlice/HeroCategoriesSlice";
+import { detailsReducer } from './MovieDetailsSlice/MovieDetailsSlice'
 
 export const store = configureStore({
     reducer:{
@@ -11,6 +12,7 @@ export const store = configureStore({
         input: inputReducer,
         yearsRange: rangeMovieReducer,
         title: titleReducer,
-        categories: categoriesReducer
+        categories: categoriesReducer,
+        details: detailsReducer
     }
 })
