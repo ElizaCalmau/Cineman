@@ -1,0 +1,15 @@
+.titleGradient{
+    color: #fff;
+    background: linear-gradient(to bottom, #262626, black);
+    padding: 1em;
+}
+
+.titleGradient h1{
+    margin: 0;
+    font-size: 5em;
+}
+
+.titleGradient h3 {
+    font-size: 2em;
+    margin: 0;
+}

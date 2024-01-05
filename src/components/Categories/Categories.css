@@ -1,0 +1,13 @@
+.categories{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.categories button {
+    border: none;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    color: #fff;
+}

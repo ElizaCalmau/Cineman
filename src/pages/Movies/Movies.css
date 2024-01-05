@@ -1,0 +1,9 @@
+.homepageMovies{
+    height: 1000px;
+    width: 100vw;
+    background-color: black;
+}
+
+.homepageMovies ul {
+    margin: 0;
+}
