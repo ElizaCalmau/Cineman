@@ -7,7 +7,6 @@ export const Categories = () => {
     const dispatch = useDispatch();
     const onClick = (category) => {
         dispatch(fetchCategories(category));
-
     }
 
     useEffect(()=>{

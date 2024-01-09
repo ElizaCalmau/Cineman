@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { useCategoriesSelector } from '../../store/HeroCategoriesSlice/HeroCategoriesSlice'
 import './Movies.css'
+
 
 export const Movies = () => {
     const categories = useCategoriesSelector();
@@ -18,12 +20,13 @@ export const Movies = () => {
                         <div className='movieDescription'>
                             <p>Name: {mov.original_title}</p>
                             <p>Year: {mov.release_date.split('-')[0]}</p>
+                            <p>Rating: {mov.vote_average}</p>
+                            <p>Overiew: {mov.overview}</p>
+                            <Link to={`/${mov.id}`}>See details</Link>     
                         </div>
                     </div>
                 ) 
             })}  
-
-            
         </div>
     )
 }
