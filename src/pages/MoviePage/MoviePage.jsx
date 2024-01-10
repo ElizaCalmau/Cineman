@@ -32,22 +32,35 @@ export const MoviePage = () => {
 
     return(
         <div className="moviePage">
-          <div className="moviePoster">
-              <img src={posterUrl} alt={details.title}/>
-          </div>
-          <div className="movieDescription">
-            <ul>
-              {details.genres && details.genres.map((genre) => {
-                return <li key={genre.id}>{genre.name}</li>
-              })}
-            </ul>
-            <div>Director: {director.name}</div>
-            <ul>{cast.slice(0, 10).map((actor) => {
-                  return <li key={actor.id}>{actor.name}</li>
+          <div className="movieWrapper">
+              <div className="moviePoster">
+                <img src={posterUrl} alt={details.title}/>
+            </div>
+            <div className="movieDescription">
+              <p>Name: {details.title}</p>
+              <p>Release date: {details.release_date}</p>
+              <p>Director: {director.name}</p>
+              
+              <ul>
+                <p>Genre:</p>
+                {details.genres && details.genres.map((genre) => {
+                  return <li key={genre.id}>{genre.name}</li>
                 })}
-            </ul>
+              </ul>
+              <p>Tagline: {details.tagline}</p>
+              <p>Rating: {details.vote_average}</p>
+              <ul>
+                <p>Cast: </p>
+                {cast.slice(0, 10).map((actor) => {
+                    return <li key={actor.id}>{actor.name}</li>
+                  })}
+              </ul>
+              <p>Overview: {details.overview}</p>
+            </div>
           </div>
+          
           <div className="Trailer">
+            <h2>Trailer:</h2>
             {trailer && (
               <iframe
                 title="Movie Trailer"

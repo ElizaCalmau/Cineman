@@ -1,7 +1,8 @@
 .heroBackground{
     background-image: url(https://raw.githubusercontent.com/ElizaCalmau/Cineman/master/img/hero_bg.jpg);
-    background-size: 85%;
     width: 100vw;
-    height: 65vh;
-    background-position: center -24%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
