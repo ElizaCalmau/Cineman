@@ -40,26 +40,15 @@ export const MoviePage = () => {
               <p>Name: {details.title}</p>
               <p>Release date: {details.release_date}</p>
               <p>Director: {director.name}</p>
-              
-              <ul>
-                <p>Genre:</p>
-                {details.genres && details.genres.map((genre) => {
-                  return <li key={genre.id}>{genre.name}</li>
-                })}
-              </ul>
+              <p>Genre: {details.genres && details.genres.map((genre) => genre.name).join(', ')}</p>
               <p>Tagline: {details.tagline}</p>
               <p>Rating: {details.vote_average}</p>
-              <ul>
-                <p>Cast: </p>
-                {cast.slice(0, 10).map((actor) => {
-                    return <li key={actor.id}>{actor.name}</li>
-                  })}
-              </ul>
+              <p>Cast: {cast && cast.slice(0, 5).map((actor) => actor.name).join(', ')} </p>            
               <p>Overview: {details.overview}</p>
             </div>
           </div>
           
-          <div className="Trailer">
+          <div className="trailer">
             <h2>Trailer:</h2>
             {trailer && (
               <iframe

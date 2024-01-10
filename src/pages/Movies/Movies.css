@@ -4,6 +4,10 @@
     background-color: black;
 }
 
+.homepageMovies h2{
+    margin: 0;
+}
+
 .movieDescription{
     border: 1px solid white;
     border-radius: 6px;

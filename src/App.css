@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Playfair Display SC', serif;
-    color: #b83b3b;
+    color: #fff;
 }
 
 #root {
@@ -12,10 +12,9 @@ body {
   width: 100vw;
 }
 
-p, h3 {
+p, h3, ul {
   font-family: 'Philosopher', serif;
 }
-
-h2 {
-  margin: 0;
+p{
+  font-size: 19px;
 }
