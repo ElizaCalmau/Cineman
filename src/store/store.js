@@ -5,6 +5,7 @@ import { rangeMovieReducer } from './YearsRangeSlice/YearRangeSlice'
 import { titleReducer } from "./TitleSlice.jsx/TitleSlice";
 import { categoriesReducer } from "./HeroCategoriesSlice/HeroCategoriesSlice";
 import { detailsReducer } from './MovieDetailsSlice/MovieDetailsSlice'
+import { trailerReducer } from "./TrailerSlice/TrailerSlice";
 
 export const store = configureStore({
     reducer:{
@@ -13,6 +14,7 @@ export const store = configureStore({
         yearsRange: rangeMovieReducer,
         title: titleReducer,
         categories: categoriesReducer,
-        details: detailsReducer
+        details: detailsReducer,
+        trailer: trailerReducer
     }
 })

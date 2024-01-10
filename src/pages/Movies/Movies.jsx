@@ -5,7 +5,6 @@ import './Movies.css'
 
 export const Movies = () => {
     const categories = useCategoriesSelector();
-    console.log(categories)
     return (
         <div className="homepageMovies">
             <h2> Results: </h2>
