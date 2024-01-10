@@ -5,7 +5,6 @@ export const fetchTrailer = createAsyncThunk('fetch-trailer',
         const response  = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=499adc143510099427a185e36cd48fb2&append_to_response=videos`)
         if(response.ok){
             const data = await response.json();
-            console.log(data)
             return data.videos.results[0];
         }
         else {
@@ -18,12 +17,14 @@ export const fetchTrailer = createAsyncThunk('fetch-trailer',
 export const TrailerSlice = createSlice({
     name: 'trailer',
     initialState: {
-        trailer: ''
+        trailer: null
     },
     reducers: {},
     extraReducers: (builder) => {
         builder.addCase(fetchTrailer.fulfilled, (state, action) => {
-            state.trailer = action.payload;
+            if (action.payload) {
+                state.trailer = action.payload;
+              }
         })
     }
 

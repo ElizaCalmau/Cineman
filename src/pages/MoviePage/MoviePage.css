@@ -1,0 +1,7 @@
+.moviePage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.4em;
+    background-color: black;
+}
