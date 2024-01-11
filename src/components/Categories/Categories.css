@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     font-size: 1.5em;
+    padding: 5em 0;
 }
 
 .categories button {

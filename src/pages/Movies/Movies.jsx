@@ -2,13 +2,12 @@ import { Link } from 'react-router-dom';
 import { useCategoriesSelector } from '../../store/HeroCategoriesSlice/HeroCategoriesSlice'
 import './Movies.css'
 
-
 export const Movies = () => {
     const categories = useCategoriesSelector();
     return (
         <div className="homepageMovies">
             <h2> Results: </h2>
-              {categories.map((mov)=> {
+              {categories && categories.map((mov)=> {
                  const baseUrl = 'https://image.tmdb.org/t/p/';
                  const posterUrl = `${baseUrl}w185${mov.poster_path}`;
                 return(
@@ -21,7 +20,7 @@ export const Movies = () => {
                             <p>Year: {mov.release_date.split('-')[0]}</p>
                             <p>Rating: {mov.vote_average}</p>
                             <p>Overiew: {mov.overview}</p>
-                            <Link to={`/${mov.id}`}>See details</Link>     
+                            <Link to={`/${mov.id}`} className='Link'>See details...</Link>     
                         </div>
                     </div>
                 ) 

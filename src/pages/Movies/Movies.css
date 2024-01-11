@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+.homepageMovies p {
+    font-size: 15px;
+}
+
 .movieDescription{
     border: 1px solid white;
     border-radius: 6px;
@@ -16,6 +20,13 @@
     padding: 2em;
     box-sizing: border-box;
 }
+
+.Link{
+    float: right;
+    color: #fff;
+    font-family: 'Philosopher';
+}
+
 .moviePoster img{
     border: 1px solid white;
     padding: 8px;

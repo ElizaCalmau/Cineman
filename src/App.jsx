@@ -6,6 +6,7 @@ import { Hero } from './pages/Hero/Hero'
 import { Movies } from './pages/Movies/Movies'
 import { MoviePage } from './pages/MoviePage/MoviePage'
 import { Title } from './components/Title/Title'
+import { Search } from './components/Search/Search'
 
 function App() {
 
@@ -14,18 +15,13 @@ function App() {
     <Provider store={store}>
       <Title/>
       <Switch>
-            <Route path='/:id'>
-              <MoviePage/>
-            </Route>
-            <Route path='/contacts'>
-              <h1>contacts</h1>
-            </Route>
             <Route path="/" exact>
               <Hero/>
+              <Search/>
               <Movies/>
             </Route>
-            <Route path="/contacts">
-              <h1>contacts</h1>
+            <Route path='/:id'>
+              <MoviePage/>
             </Route>
       </Switch>
   </Provider>
