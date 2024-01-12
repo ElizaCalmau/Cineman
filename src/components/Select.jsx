@@ -1,13 +1,28 @@
-import { useState } from "react"
 
-export const Select = () => {
-    const [selectedOption, setSelectedOption] = useState('value1')
+export const Select = ({selectedOption, setSelectedOption}) => {
+    
     return(
         <div>
             <select name="select" value={selectedOption} onChange={(e)=>setSelectedOption(e.target.value)}>
-            <option value="value1">Значение 1</option>
-            <option value="value2" selected>Значение 2</option>
-            <option value="value3">Значение 3</option>
+            <option value="28">Action</option>
+            <option value="12">Adventure</option>
+            <option value="16">Animation</option>
+            <option value="35">Comedy</option>
+            <option value="80">Crime</option>
+            <option value="99">Documentary</option>
+            <option value="18">Drama</option>
+            <option value="10751">Family</option>
+            <option value="14">Fantasy</option>
+            <option value="36">History</option>
+            <option value="27">Horror</option>
+            <option value="10402">Music</option>
+            <option value="9648">Mystery</option>
+            <option value="10749">Romance</option>
+            <option value="878">Science Fiction</option>
+            <option value="10770">TV Movie</option>
+            <option value="53">Thriller</option>
+            <option value="10752">War</option>
+            <option value="37">Western</option>
             </select>
             <p>selected option {selectedOption}</p>
         </div>
