@@ -1,11 +1,19 @@
 .moviePage{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
     padding: 1.4em;
     background-color: black;
 }
 
 .trailer{
     margin: 4em;
+}
+
+.moviePage button {
+    width: fit-content;
+    padding: 1em 2em;
 }

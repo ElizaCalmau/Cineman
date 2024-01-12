@@ -1,0 +1,17 @@
+
+.customSelect select {
+    width: 200px;
+    height: 40px;
+    font-size: 1.5em;
+    margin: 2em;
+    background-color: black;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.customSelect option{
+    font-size: 1em;
+    color: rgb(169, 169, 169);
+    background-color: black;
+}

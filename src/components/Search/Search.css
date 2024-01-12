@@ -1,0 +1,8 @@
+.search{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
