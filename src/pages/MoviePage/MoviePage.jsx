@@ -40,7 +40,7 @@ export const MoviePage = () => {
       setCast(castArr);
     }
   }, [details.credits]);
-
+  console.log(trailer)
   return (
     <div className="moviePage">
       <div className="movieWrapper">
@@ -70,20 +70,22 @@ export const MoviePage = () => {
         </div>
       </div>
 
-      <div className="trailer">
+      
         {trailer && (
-          <div>
+          <div className="trailer">
             <h2>Trailer:</h2>
             <iframe
               title="Movie Trailer"
               width="560"
               height="315"
               src={`https://www.youtube.com/embed/${trailer.key}`}
+              frameBorder="0"
+              allowFullScreen
             />
           </div>
           
         )}
-      </div>
+
       <button onClick={onBack}>Home</button>
     </div>
   );
