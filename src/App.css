@@ -15,6 +15,25 @@ body {
 p, h3, ul {
   font-family: 'Philosopher', serif;
 }
+
 p{
   font-size: 19px;
+}
+
+nav{
+  padding: 2em;
+  background-color: black;
+}
+
+.navLink{
+  color: #fff;
+  margin: 2em;
+}
+
+.navLink:hover{
+  color:rgb(136, 31, 31)
+}
+
+.activeNavLink{
+  border-bottom: 1px solid white
 }

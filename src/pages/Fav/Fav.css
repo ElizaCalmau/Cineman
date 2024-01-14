@@ -1,0 +1,22 @@
+.favPage{
+    min-height: 100vh;
+    height: fit-content;
+    background-color: black;
+}
+
+.favPage h2{
+    margin: 0;
+    padding: 2em;
+}
+
+.favWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+nav{
+    font-size: 25px;
+}
