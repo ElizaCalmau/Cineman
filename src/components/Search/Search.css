@@ -7,3 +7,6 @@
     box-sizing: border-box;
 }
 
+.search button:hover {
+    color:rgb(201, 22, 22)
+}

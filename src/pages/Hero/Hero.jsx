@@ -1,5 +1,4 @@
 import { Categories } from '../../components/Categories/Categories'
-
 import './Hero.css'
 
 export const Hero = () => {
