@@ -8,7 +8,10 @@ export const FavSlice = createSlice({
     },
     reducers: {
         addToFav: (state, action) => {
-            state.fav.push(action.payload);
+            const movieToAdd = action.payload;
+            if (!state.fav.some((el) => el.mov.id === movieToAdd.mov.id)) {
+                state.fav.push(movieToAdd);
+            }
         },
         removeFromFav: (state, action) => {
             state.fav = state.fav.filter((el) => el.mov.id !== action.payload);

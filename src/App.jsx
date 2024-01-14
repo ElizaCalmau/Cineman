@@ -19,6 +19,7 @@ function App() {
             to="/"
             className="navLink"
             activeClassName="activeNavLink"
+            exact
           >
             Home
           </NavLink>
