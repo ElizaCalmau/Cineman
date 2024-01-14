@@ -22,7 +22,6 @@ export const fetchByYears = createAsyncThunk(
         const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=499adc143510099427a185e36cd48fb2&primary_release_date.gte=${start}&primary_release_date.lte=${end}`)
         if(response.ok){
             const data = await response.json();
-            console.log(data.results)
             return data.results;
         }
         else{

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 import { Input } from "../Input/Input"
 import { fetchByTitle, fetchByYears, fetchByGenreAndYears } from "../../store/HeroCategoriesSlice/HeroCategoriesSlice"; 
@@ -16,7 +16,7 @@ export const Search = () => {
         if(title){
             dispatch(fetchByTitle({title: title, year: start}))
         }
-        if(start !== ''){
+        if(start !== '' && end !== ''){
             dispatch(fetchByYears({start: start, end: end}))
             setTitle('')
         }
@@ -26,13 +26,22 @@ export const Search = () => {
         }
     }
 
+    useEffect(() => {
+        window.addEventListener('keydown', (e) => {
+         if(e.key === 'Enter'){
+          onClick()
+         }
+        })
+       })
+    
+
     return(
         <div className='search'>
             <Input type='text' value={title} setValue={setTitle} label="Title:" />
             <Input type='number' value={start} setValue={setStart} label="From:"/>
             <Input type='number' value={end} setValue={setEnd} label="To:"/>
             <Select selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>
-            <button onClick={onClick}>Search</button>
+            <button onClick={onClick} tabIndex="0">Search</button>
         </div>
     )
 }

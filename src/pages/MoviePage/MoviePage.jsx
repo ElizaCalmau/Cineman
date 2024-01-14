@@ -44,9 +44,9 @@ export const MoviePage = () => {
   return (
     <div className="moviePage">
       <div className="movieWrapper">
-        <div className="moviePoster">
-          <img src={posterUrl} alt={details.title} />
-        </div>
+        {details.poster_path !== null && <div className="moviePoster">
+             <img src={posterUrl} alt={details.title} />
+        </div>}
         <div className="movieDescription">
           {details.title && <p>Name: {details.title}</p>}
           {details.release_date && <p>Release date: {details.release_date}</p>}

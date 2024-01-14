@@ -13,8 +13,9 @@ export const Movies = () => {
                 return(
                     <div key={mov.id} className='movieWrapper'>
                         <div className='moviePoster'>
-                            <img src={posterUrl} alt='img'/>
-                        </div>
+                        { mov.poster_path !== null &&
+                            <img src={posterUrl} alt='img'/>}
+                        </div> 
                         <div className='movieDescription'>
                             <p>Name: {mov.original_title}</p>
                             <p>Year: {mov.release_date.split('-')[0]}</p>
