@@ -17,3 +17,6 @@
     width: fit-content;
     padding: 1em 2em;
 }
+.moviePoster img{
+    width: 500px;
+}

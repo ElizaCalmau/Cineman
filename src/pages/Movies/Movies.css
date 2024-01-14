@@ -26,18 +26,16 @@
     color: #fff;
     font-family: 'Philosopher';
 }
-.moviePoster {
+.moviesPoster {
     border: 1px solid white;
     padding: 8px;
     border-radius: 6px;
     min-width: 185px;
     min-height: 250px;
 }
-/* .moviePoster img{
-    border: 1px solid white;
-    padding: 8px;
-    border-radius: 6px;
-} */
+.moviesPoster img{
+    width: 185px;
+}
 .movieWrapper{
     display: flex;
     justify-content: space-evenly;

@@ -4,6 +4,7 @@ import './Movies.css'
 
 export const Movies = () => {
     const categories = useCategoriesSelector();
+    const emptyPoster = 'https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg'
     return (
         <div className="homepageMovies">
             <h2> Results: </h2>
@@ -12,9 +13,8 @@ export const Movies = () => {
                  const posterUrl = `${baseUrl}w185${mov.poster_path}`;
                 return(
                     <div key={mov.id} className='movieWrapper'>
-                        <div className='moviePoster'>
-                        { mov.poster_path !== null &&
-                            <img src={posterUrl} alt='img'/>}
+                        <div className='moviesPoster'>
+                            <img src={mov.poster_path !== null ? posterUrl : emptyPoster } alt='img'/>
                         </div> 
                         <div className='movieDescription'>
                             <p>Name: {mov.original_title}</p>
