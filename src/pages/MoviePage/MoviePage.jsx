@@ -16,8 +16,7 @@ export const MoviePage = () => {
   const trailer = useMovieTrailer(id);
   const baseUrl = "https://image.tmdb.org/t/p/";
   const posterUrl = `${baseUrl}w500${details.poster_path}`;
-  const emptyPoster =
-    "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
+  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
   
   const onBack = () => {
     history.goBack();

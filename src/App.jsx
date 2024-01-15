@@ -15,28 +15,16 @@ function App() {
       <Provider store={store}>
         <Title />
         <nav>
-          <NavLink
-            to="/"
-            className="navLink"
-            activeClassName="activeNavLink"
-            exact
-          >
+          <NavLink to="/" className="navLink" activeClassName="activeNavLink" exact>
             Home
           </NavLink>
-          <NavLink
-            to="/fav"
-            className="navLink"
-            activeClassName="activeNavLink"
-          >
+          <NavLink to="/fav" className="navLink" activeClassName="activeNavLink">
             Favourite
           </NavLink>
         </nav>
         <Switch>
           <Route path="/fav">
             <Fav />
-          </Route>
-          <Route path="/rating">
-            <h2 style={{ color: "black" }}>rating</h2>
           </Route>
           <Route path="/" exact>
             <Hero />

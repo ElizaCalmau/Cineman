@@ -1,5 +1,5 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchDetails = createAsyncThunk(
   "fetch-details-by-id",

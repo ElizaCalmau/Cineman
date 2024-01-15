@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { Input } from "../Input/Input";
 import { fetchByTitle, fetchByYears, fetchByGenreAndYears } from "../../store/HeroCategoriesSlice/HeroCategoriesSlice";
+import { Input } from "../Input/Input";
 import { Select } from "../Select/Select";
 import "./Search.css";
 

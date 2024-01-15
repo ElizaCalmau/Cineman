@@ -5,13 +5,13 @@ import "./Fav.css";
 export const Fav = () => {
   const dispatch = useDispatch();
   const favs = useFavSelector();
+
   const onDelete = (id) => {
     dispatch(removeFromFav(id));
   };
 
   const baseUrl = "https://image.tmdb.org/t/p/";
-  const emptyPoster =
-    "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
+  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
   return (
     <div className="favPage">
       <h2>Your favourite Movies</h2>

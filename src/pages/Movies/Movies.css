@@ -48,7 +48,3 @@
     color:rgb(201, 22, 22);
 
 }
-
-.movieWrapper button:focus {
-    outline: none;
-}
