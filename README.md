@@ -20,11 +20,12 @@ The Cineman - is application which allows you to find some movies description an
 - Redux-Thunk
 
 ## Architecture
-Cineman emulates a web application for movies search. I used the TMDB API as a base of my application. 
-The application consists of three pages: **Home**, **Movie Page** and **Favourite Movies**. I used a react-router-dom v5.3.4 to implement navigaion between pages. 
-Each page has a header with tagline 'Cineman. Create your Cinema Universe' and navigation items *Home* and *Favourite*;
+###The Cineman### emulates a web application for movies search. I used the TMDB API as a base of my application. 
 
-**Home** page contains a *Categories* buttons, *Search* and *Movies List*. By clicking each category button such as 'Top Rated', 'Popular', 'Now Playing' and 'Upcoming' invokes fetch request which result renders at Home page below the 'Search'; When page loads at first time it authomatically fetching a 'Top Rated' movies by using a useEffect React hook.
+The application consists of three pages: **Home**, **Movie Page** and **Favourite Movies**. I used a react-router-dom v5.3.4 to implement navigaion between pages. 
+Each page has a header with tagline *'Cineman. Create your Cinema Universe'* and navigation items **Home** and **Favourite**;
+
+**Home** page contains a **Categories** buttons, **Search** and ***Movies List**. By clicking each category button such as **Top Rated**, **Popular**, **Now Playing** and **Upcoming** invokes fetch request which result renders at Home page below the 'Search'; When page loads at first time it authomatically fetching a 'Top Rated' movies by using a useEffect React hook.
 The *Search* represents a 3 inputs, select and a button to send a request, which contains a data from input/select as query parameters. 
 There a few options to use a *Search*. You can search movie by **title**, by **years** range (the 'from' and 'to' are both required for this request) and by **genre** from select. You can activate search by clicking 'Search' with a cursor or just push 'Enter' key.
 You can also combine search parameters.
