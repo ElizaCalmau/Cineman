@@ -15,7 +15,7 @@ function App() {
       <Provider store={store}>
         <Title />
         <nav>
-        <NavLink
+          <NavLink
             to="/"
             className="navLink"
             activeClassName="activeNavLink"
@@ -29,13 +29,6 @@ function App() {
             activeClassName="activeNavLink"
           >
             Favourite
-          </NavLink>
-          <NavLink
-            to="/rating"
-            className="navLink"
-            activeClassName="activeNavLink"
-          >
-            My Rating
           </NavLink>
         </nav>
         <Switch>

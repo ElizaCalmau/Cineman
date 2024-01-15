@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams, useHistory } from "react-router-dom";
 import { useMovieDetails } from "../../utils/useMovieDetails";
 import { useMovieTrailer } from "../../utils/useMovieTrailer";
 import { addToFav } from "../../store/FavSlice/FavSlice";
 import "./MoviePage.css";
-import { useDispatch } from "react-redux";
 
 export const MoviePage = () => {
   const [director, setDirector] = useState("");
@@ -95,7 +95,6 @@ export const MoviePage = () => {
           />
         </div>
       )}
-
       <button onClick={onBack}>Home</button>
     </div>
   );

@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { useCategoriesSelector } from "../../store/HeroCategoriesSlice/HeroCategoriesSlice";
-import { addToFav, useFavSelector } from "../../store/FavSlice/FavSlice";
+import { addToFav } from "../../store/FavSlice/FavSlice";
 import "./Movies.css";
 
 export const Movies = () => {
   const dispatch = useDispatch();
   const categories = useCategoriesSelector();
-  const emptyPoster =
-    "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
+  
+  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
+
   const onAddToFav = (mov) => {
     dispatch(addToFav({ mov }));
   };
-  const fav = useFavSelector()
-  console.log(fav)
+
   return (
     <div className="homepageMovies">
       <h2> Results: </h2>

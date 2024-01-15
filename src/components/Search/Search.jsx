@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Input } from "../Input/Input";
-import {
-  fetchByTitle,
-  fetchByYears,
-  fetchByGenreAndYears,
-} from "../../store/HeroCategoriesSlice/HeroCategoriesSlice";
+import { fetchByTitle, fetchByYears, fetchByGenreAndYears } from "../../store/HeroCategoriesSlice/HeroCategoriesSlice";
 import { Select } from "../Select/Select";
 import "./Search.css";
 
@@ -45,10 +41,7 @@ export const Search = () => {
       <Input type="text" value={title} setValue={setTitle} label="Title:" />
       <Input type="number" value={start} setValue={setStart} label="From:" />
       <Input type="number" value={end} setValue={setEnd} label="To:" />
-      <Select
-        selectedOption={selectedOption}
-        setSelectedOption={setSelectedOption}
-      />
+      <Select selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>
       <button onClick={onClick} tabIndex="0">
         Search
       </button>

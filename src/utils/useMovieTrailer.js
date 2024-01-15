@@ -1,6 +1,6 @@
+import { useEffect } from "react";
 import { useDispatch } from "react-redux"
 import { useTrailerSlice, fetchTrailer } from "../store/TrailerSlice/TrailerSlice";
-import { useEffect } from "react";
 
 export const useMovieTrailer = (id) => {
     const dispatch = useDispatch();
