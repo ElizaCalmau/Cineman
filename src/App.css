@@ -21,7 +21,7 @@ p{
 }
 
 nav{
-  padding: 2em;
+  padding: 1.5em;
   font-size: 2em;
   background-color: black;
 }
@@ -29,10 +29,12 @@ nav{
 .navLink{
   color: #fff;
   margin: 2em;
+  transition: all 0.3s ease
 }
 
 .navLink:hover{
-  color:rgb(201, 22, 22)
+  color:rgb(201, 22, 22);
+  border-bottom: 1px solid rgb(201, 22, 22);
 }
 
 .activeNavLink{

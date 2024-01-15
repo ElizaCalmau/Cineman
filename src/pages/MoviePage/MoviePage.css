@@ -13,11 +13,6 @@
     margin: 4em;
 }
 
-.moviePage button {
-    width: fit-content;
-    padding: 1em 2em;
-    margin: 0 1em;
-}
 .moviePoster img{
     width: 342px;
     box-shadow: 0px 0px 8px 0 white;
@@ -29,6 +24,17 @@
     border-radius: 6px;
 }
 
+.moviePage button {
+    width: fit-content;
+    padding: 1em 2em;
+    margin: 0 1em;
+    transition: transform 0.3s ease;
+}
+
+.moviePage button:active {
+    transform: translate(1px, -3px);
+}
+
 .moviePage button:hover{
     color: rgb(201, 22, 22);
 }
@@ -36,3 +42,4 @@
 .moviePage button:focus {
     outline: none;
 }
+

@@ -25,6 +25,11 @@
     float: right;
     color: #fff;
     font-family: 'Philosopher';
+    transition: transform 0.3s ease;
+}
+
+.Link:active{
+    transform: translate(1px, -3px);
 }
 
 .Link:hover {
@@ -47,4 +52,12 @@
 .movieWrapper button:hover {
     color:rgb(201, 22, 22);
 
+}
+
+.movieWrapper button {
+    transition: transform 0.3s ease;
+}
+
+.movieWrapper button:active {
+    transform: translate(1px, -3px);
 }

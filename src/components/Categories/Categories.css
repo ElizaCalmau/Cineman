@@ -11,6 +11,11 @@
     border-radius: 0;
     border-bottom: 1px solid white;
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+.categories button:active {
+    transform: translate(1px, -3px);
 }
 
 .categories button:hover {

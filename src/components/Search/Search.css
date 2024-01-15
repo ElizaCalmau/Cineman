@@ -10,3 +10,11 @@
 .search button:hover {
     color:rgb(201, 22, 22);
 }
+
+.search button {
+    transition: transform 0.3s ease;
+}
+
+.search button:active {
+    transform: translate(1px, -3px);
+}

@@ -6,7 +6,8 @@
 
 .favPage h2{
     margin: 0;
-    padding: 2em;
+    padding: 1em;
+    font-size: 1.8em;
 }
 
 .favWrapper {
@@ -25,10 +26,15 @@
 
 .favMovie button{
     width: fit-content;
+    transition: transform 0.3s ease;
 }
 
 .favMovie button:hover {
     color:rgb(201, 22, 22);
+}
+
+.favMovie button:active {
+    transform: translate(1px, -3px);
 }
 
 .movPageLink{
