@@ -11,7 +11,7 @@ export const Fav = () => {
   };
 
   const baseUrl = "https://image.tmdb.org/t/p/";
-  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
+  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/master/src/assets/empty_poster.jpg";
   return (
     <div className="favPage">
       <h2>Your favourite Movies</h2>

@@ -8,7 +8,7 @@ export const Movies = () => {
   const dispatch = useDispatch();
   const categories = useCategoriesSelector();
   
-  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/develop/img/empty_poster.jpg";
+  const emptyPoster = "https://raw.githubusercontent.com/ElizaCalmau/Cineman/master/src/assets/empty_poster.jpg";
 
   const onAddToFav = (mov) => {
     dispatch(addToFav({ mov }));
