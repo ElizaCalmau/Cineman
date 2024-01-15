@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { Link } from 'react-router-dom'
 import { useFavSelector, removeFromFav } from "../../store/FavSlice/FavSlice";
 import "./Fav.css";
 
@@ -28,8 +29,8 @@ export const Fav = () => {
                   alt={favItem.mov.title}
                 />
               </div>
-              <p>{favItem.mov.title}</p>
-              <button onClick={() => onDelete(favItem.mov.id)}>Remove</button>
+              <Link to={`/${favItem.mov.id}`} className='movPageLink'>{favItem.mov.title}</Link>
+              <button onClick={() => onDelete(favItem.mov.id)}>🗑️</button>
             </div>
           );
         })}

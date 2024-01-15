@@ -17,10 +17,27 @@
     padding: 2em;
 }
 
-nav{
-    font-size: 25px;
+.favMovie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favMovie button{
+    width: fit-content;
 }
 
 .favMovie button:hover {
+    color:rgb(201, 22, 22);
+}
+
+.movPageLink{
+    color: #fff;
+    font-family: 'Philosopher';
+    font-size: 1.5em;
+    padding: 1em; 
+}
+
+.movPageLink:hover {
     color:rgb(201, 22, 22);
 }

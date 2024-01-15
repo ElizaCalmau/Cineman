@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useParams, useHistory } from "react-router-dom";
 import { useMovieDetails } from "../../utils/useMovieDetails";
 import { useMovieTrailer } from "../../utils/useMovieTrailer";
-import { addToFav } from "../../store/FavSlice/FavSlice";
+import { addToFav, removeFromFav } from "../../store/FavSlice/FavSlice";
 import "./MoviePage.css";
 
 export const MoviePage = () => {
@@ -25,6 +25,10 @@ export const MoviePage = () => {
   const onAddToFav = () => {
     dispatch(addToFav({mov: details}));
   };
+
+  const onRemoveFromFav = (id) => {
+    dispatch(removeFromFav(id))
+  }
 
   useEffect(() => {
     if (
@@ -79,6 +83,7 @@ export const MoviePage = () => {
           </p>
           {details.overview && <p>Overview: {details.overview}</p>}
           <button onClick={onAddToFav}>❤</button>
+          <button onClick={() => onRemoveFromFav(details.id)}>🗑️</button>
         </div>
       </div>
 

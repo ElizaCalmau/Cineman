@@ -16,6 +16,7 @@
 .moviePage button {
     width: fit-content;
     padding: 1em 2em;
+    margin: 0 1em;
 }
 .moviePoster img{
     width: 342px;

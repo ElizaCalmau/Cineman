@@ -54,10 +54,10 @@ In case if the poster image is absent, there is a default image which replaces p
 ### Movie Page
 **Movie Page** contains a movie poster, more detailed description of movie (such as director's name, cast and genre) and trailer. 
 Trailer was embedded by using iframe HTML element and link to Youtube with specific trailer key from the API.
-It also allowed to add movie to **Favourites** by clicking above-mentioned button '❤'.
+It also allowed to add movie to **Favourites** by clicking above-mentioned button '❤'. The 🗑️ button removes movie from favourites list.
 
 
 ### Favourite Movies Page
-**Favourite** movies page represents a list of movies. Each movie has a poster, title and button *Remove* to remove a movie from favourites. 
+**Favourite** movies page represents a list of movies. Each movie has a poster, title and button 🗑️ to remove a movie from favourites. 
 Adding duplicated movies to favourites list is prevented as well.
-
+Also you can navigate to a specific **Movie Page** by clicking a movie title.
