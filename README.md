@@ -27,13 +27,13 @@ The application consists of three pages: **Home**, **Movie Page** and **Favourit
 Each page has a header with tagline *'Cineman. Create your Cinema Universe'* and navigation items **Home** and **Favourite**;
 
 ### Home page
-**Home** page contains a **Categories** buttons, **Search** and ***Movies List**. 
-By clicking each category button such as **Top Rated**, **Popular**, **Now Playing** and **Upcoming** invokes fetch request which result renders at Home page below the 'Search'; When page loads at first time it authomatically fetching a 'Top Rated' movies by using a useEffect React hook.
+**Home** page contains a **Categories** buttons, **Search** and **Movies List**. 
+By clicking each category button such as **Top Rated**, **Popular**, **Now Playing** and **Upcoming** invokes fetch request which result renders at Home page below the **Search**; When page is loading at the first time it is automatically fetching **Top Rated** movies by using useEffect React hook.
 
 ### Search section
-The *Search* represents a 3 inputs, select and a button to send a request, which contains a data from input/select as query parameters. 
+The **Search** represents a 3 inputs, select and send a request button which contains a data from input/select as query parameters. 
 
-There a few options to use a *Search*. You can search movie by **title**, by **years** range (the 'from' and 'to' are both required for this request) and by **genre** from select. You can activate search by clicking 'Search' with a cursor or just push 'Enter' key.
+There are several options to use a **Search**. You can search movie by **title**, by **years** range (the 'from' and 'to' are both required for this request) and by **genre** from select. You can activate search by clicking 'Search' button with a cursor or just push 'Enter' key.
 You can also combine search parameters.
 
 **Allowed search combinations**: 
@@ -44,20 +44,20 @@ You can also combine search parameters.
 - 'From' + 'To' + 'Genre' (will find movies according to years range and required genre)
 
 ### Movies Section
-The *Movies List* represents the rendered response from API.
-In dependency of API response it renders different categories of movies.
+The **Movies List** represents the rendered response from API.
+Dependent on the API response, it renders different movies categories.
 
- Each movie has it own poster image, name, release date, description and button '❤' which allows add movie to *Favourite*. 
- If poster image is absent there appears a default image which I took from 'Unsplash' resource. Also there's link *See details...* which is navigate us for **Movie Page**.
+Each movie has it's own poster image, name, release date, description and button '❤' which allows to add movie to **Favourite**. 
+In case if the poster image is absent, there is a default image which replaces poster image. Also there's link *See details...* which navigates us to **Movie Page**.
 
 
 ### Movie Page
-**Movie Page** contains a movie poster, more detail description of movie (such as director's name, cast and genre) and trailer. 
+**Movie Page** contains a movie poster, more detailed description of movie (such as director's name, cast and genre) and trailer. 
 Trailer was embedded by using iframe HTML element and link to Youtube with specific trailer key from the API.
-It also allowed to add movie to *Favourites* by clicking above-mentioned button '❤'.
+It also allowed to add movie to ***Favourites** by clicking above-mentioned button '❤'.
 
 
 ### Favourite Movies Page
-**Favourite** movies page represents a list of movies. Each movie has a poster, title and button *Remove* to remove movie from favourites. 
-I also prevented adding the same movies to list of favourite movies.
+**Favourite** movies page represents a list of movies. Each movie has a poster, title and button *Remove* to remove a movie from favourites. 
+Adding duplicated movies to favourites list is prevented as well.
 
