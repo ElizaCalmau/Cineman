@@ -20,7 +20,7 @@ The Cineman - is application which allows you to find some movies description an
 - Redux-Thunk
 
 ## Architecture
-###The Cineman### emulates a web application for movies search. I used the TMDB API as a base of my application. 
+**The Cineman** emulates a web application for movies search. I used the TMDB API as a base of my application. 
 
 The application consists of three pages: **Home**, **Movie Page** and **Favourite Movies**. I used a react-router-dom v5.3.4 to implement navigaion between pages. 
 Each page has a header with tagline *'Cineman. Create your Cinema Universe'* and navigation items **Home** and **Favourite**;
