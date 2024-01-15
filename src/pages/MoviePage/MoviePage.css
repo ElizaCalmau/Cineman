@@ -31,3 +31,7 @@
 .moviePage button:hover{
     color: rgb(201, 22, 22);
 }
+
+.moviePage button:focus {
+    outline: none;
+}
